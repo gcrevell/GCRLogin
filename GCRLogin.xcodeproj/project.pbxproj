@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		007053291EFE98BD00FFFA28 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 007053281EFE98BD00FFFA28 /* .swiftlint.yml */; };
 		00D60FEB1EFE8E7300F8C3A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D60FEA1EFE8E7300F8C3A1 /* AppDelegate.swift */; };
 		00D60FED1EFE8E7300F8C3A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D60FEC1EFE8E7300F8C3A1 /* ViewController.swift */; };
 		00D60FF01EFE8E7300F8C3A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D60FEE1EFE8E7300F8C3A1 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		007053281EFE98BD00FFFA28 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		00D60FE71EFE8E7300F8C3A1 /* GCRLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCRLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00D60FEA1EFE8E7300F8C3A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00D60FEC1EFE8E7300F8C3A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		00D60FDE1EFE8E7300F8C3A1 = {
 			isa = PBXGroup;
 			children = (
+				007053281EFE98BD00FFFA28 /* .swiftlint.yml */,
 				00D60FE91EFE8E7300F8C3A1 /* GCRLogin */,
 				00D60FFE1EFE8E7300F8C3A1 /* GCRLoginTests */,
 				00D610091EFE8E7300F8C3A1 /* GCRLoginUITests */,
@@ -132,6 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00D6100F1EFE8E7300F8C3A1 /* Build configuration list for PBXNativeTarget "GCRLogin" */;
 			buildPhases = (
+				007053271EFE96B300FFFA28 /* ShellScript */,
 				00D60FE31EFE8E7300F8C3A1 /* Sources */,
 				00D60FE41EFE8E7300F8C3A1 /* Frameworks */,
 				00D60FE51EFE8E7300F8C3A1 /* Resources */,
@@ -229,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007053291EFE98BD00FFFA28 /* .swiftlint.yml in Resources */,
 				00D60FF51EFE8E7300F8C3A1 /* LaunchScreen.storyboard in Resources */,
 				00D60FF21EFE8E7300F8C3A1 /* Assets.xcassets in Resources */,
 				00D60FF01EFE8E7300F8C3A1 /* Main.storyboard in Resources */,
@@ -250,6 +255,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		007053271EFE96B300FFFA28 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, install using `brew install swiftlint`\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		00D60FE31EFE8E7300F8C3A1 /* Sources */ = {
@@ -419,7 +440,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6YUP5Q2DLS;
 				INFOPLIST_FILE = GCRLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = revoltapplications.GCRLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,7 +455,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6YUP5Q2DLS;
 				INFOPLIST_FILE = GCRLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = revoltapplications.GCRLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,6 +543,7 @@
 				00D610111EFE8E7300F8C3A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00D610121EFE8E7300F8C3A1 /* Build configuration list for PBXNativeTarget "GCRLoginTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +552,7 @@
 				00D610141EFE8E7300F8C3A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00D610151EFE8E7300F8C3A1 /* Build configuration list for PBXNativeTarget "GCRLoginUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +561,7 @@
 				00D610171EFE8E7300F8C3A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
