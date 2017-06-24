@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		007053291EFE98BD00FFFA28 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 007053281EFE98BD00FFFA28 /* .swiftlint.yml */; };
+		0070532B1EFE9E8300FFFA28 /* PasswordPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0070532A1EFE9E8300FFFA28 /* PasswordPolicy.swift */; };
 		00D60FEB1EFE8E7300F8C3A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D60FEA1EFE8E7300F8C3A1 /* AppDelegate.swift */; };
 		00D60FED1EFE8E7300F8C3A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D60FEC1EFE8E7300F8C3A1 /* ViewController.swift */; };
 		00D60FF01EFE8E7300F8C3A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D60FEE1EFE8E7300F8C3A1 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		007053281EFE98BD00FFFA28 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		0070532A1EFE9E8300FFFA28 /* PasswordPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordPolicy.swift; sourceTree = "<group>"; };
 		00D60FE71EFE8E7300F8C3A1 /* GCRLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCRLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00D60FEA1EFE8E7300F8C3A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00D60FEC1EFE8E7300F8C3A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				00D60FEA1EFE8E7300F8C3A1 /* AppDelegate.swift */,
 				00D60FEC1EFE8E7300F8C3A1 /* ViewController.swift */,
+				0070532A1EFE9E8300FFFA28 /* PasswordPolicy.swift */,
 				00D60FEE1EFE8E7300F8C3A1 /* Main.storyboard */,
 				00D60FF11EFE8E7300F8C3A1 /* Assets.xcassets */,
 				00D60FF31EFE8E7300F8C3A1 /* LaunchScreen.storyboard */,
@@ -279,6 +282,7 @@
 			files = (
 				00D60FED1EFE8E7300F8C3A1 /* ViewController.swift in Sources */,
 				00D60FEB1EFE8E7300F8C3A1 /* AppDelegate.swift in Sources */,
+				0070532B1EFE9E8300FFFA28 /* PasswordPolicy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
